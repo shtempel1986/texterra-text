@@ -1,0 +1,105 @@
+@font-face
+  font-family: Arial
+  src: url("../fonts/ArialRegular.ttf")
+  font-weight: normal
+@font-face
+  font-family: Arial
+  src: url("../fonts/ArialBold.ttf")
+  font-weight: bold
+@font-face
+  font-family: "Open Sans"
+  src: url('../fonts/OpenSans-REgular.ttf')
+  font-weight: normal
+@font-face
+  font-family: MinionPro
+  src: url("../fonts/MinionPro-Bold.otf")
+  font-weight: bold
+$bg-color: #e3e3e1
+$stage-head: #785c81
+$stage-head-text: #f8f6f8
+$text-main: #4d4d4d
+$dev-color: #b4b4b3
+//для всего документа
+*
+  margin: 0
+  padding: 0
+  font: normal 16px Arial
+  color: $text-main
+body
+  background: $bg-color
+.container
+  width: 753px
+.container, .col-sm-4
+  padding: 0 20px
+h2
+  font: bold 30px MinionPro
+.stage__heading
+  background: $stage-head
+  color: $stage-head-text
+  font-size: 14px
+  font-weight: bold
+  padding: 2px 22px 4px
+  width: 106px
+  border-radius: 18px
+.stage__number
+  font-weight: bold
+  font-size: 25px
+  color: $stage-head-text
+  margin: 0 5px 0 0
+.stage__caption
+  font: bold 16px Arial
+  color: $stage-head
+
+header
+  background: url("../img/header__bg.jpg")
+  height: 170px
+.main-heading
+  color: #fff
+  font: bold 43px/53px MinionPro
+  position: relative
+.heading__text
+  position: absolute
+  display: block
+  height: 145px
+  width: 724px
+  bottom: -72px
+  background: url("../img/heading__top2.png") top right no-repeat
+  &-content
+    color: #fff
+    position: absolute
+    bottom: 10px
+    width: 400px
+    text-transform: none
+    left: 50%
+    margin: 0 0 0 -200px
+
+main
+  margin: 50px auto 25px
+.prepare
+  &__illustration
+    padding: 0
+  &__heading
+    padding: 0 20px
+.fill
+  background: url("../img/illustration2.png") no-repeat 0 57px
+  &-stage
+    margin: 22px 0 0 239px
+    padding: 0 0 0 123px
+    position: relative
+    .stage__heading
+      position: absolute
+      top: 0
+      left: 0
+      margin: 0
+.protection
+  background: url("../img/illustration3.png") no-repeat right bottom
+  &__text
+    width: 375px
+    margin: 0 0 135px
+.developed
+  font: normal 14px "Open Sans"
+  color: $dev-color
+  width: 200px
+  display: flex
+  align-items: baseline
+  justify-content: space-between
